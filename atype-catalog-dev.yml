@@ -2,6 +2,8 @@ spring:
   jpa:
     show-sql: true
     database: postgresql
+    hibernate:
+      ddl-auto: create
   h2:
     console:
       enabled: true
