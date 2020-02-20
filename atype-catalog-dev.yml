@@ -4,12 +4,11 @@ spring:
     database: postgresql
     hibernate:
       ddl-auto: create
-  h2:
-    console:
-      enabled: true
-      path: /h2
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect  
   datasource:
     url: jdbc:postgresql://localhost:5432/dealers
-    username: sa
-    password:
+    username: postgres
+    password: postgres
     driverClassName: org.postgresql.Driver
